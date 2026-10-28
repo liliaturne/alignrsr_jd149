@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liliaturne-alignrsr_jd149"
+version = "0.1.0"
+description = "统计各来源片段的贡献量与占比，标出对齐算法研究员·灰度发布与版本回滚上最主要的来源"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "liliaturne" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://liliaturne.github.io"
+Repository = "https://github.com/liliaturne/alignrsr_jd149"
+Issues = "https://github.com/liliaturne/alignrsr_jd149/issues"
+
+[project.scripts]
+alignrsr_jd149 = "alignrsr_jd149:main"
+
+[tool.setuptools]
+py-modules = ["alignrsr_jd149"]
